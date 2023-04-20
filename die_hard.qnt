@@ -57,4 +57,10 @@ module die_hard {
         SmallToBig,
         BigToSmall
     }
+    // defines invariant
+    // if broken it means four gallons of water could be poured in the big jug using 3 and 5 gallon jugs
+    val bigJugNotEqualTo4: bool = big != 4
+
+    // try invariant with 
+    // quint run --invariant=bigJugNotEqualTo4 --verbosity=3 die_hard.qnt 
 }
