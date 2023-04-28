@@ -32,7 +32,7 @@ module bidding {
     def bothPlayersBidded: bool = all {
         // not(bid1._2 == -1), // superfluous
         // not(bid2._2 == -1), // superfluous
-        //check whether the bids are valid
+        // check whether the bids are valid
         bid1._2 > 0,
         bid2._2 > 0
     }
